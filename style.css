@@ -1,0 +1,65 @@
+:root {
+  --primary-color: rgba(123, 51, 88, .95);
+  --primary-color-1: rgba(158, 65, 113);
+  --primary-color-2: rgba(123, 51, 88);
+  --primary-color-3: rgba(88, 36, 63,.5);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+table {
+  max-width: 600px;
+  margin: 100px auto;
+  cursor: pointer;
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+}
+
+.col-name {
+  width: 60%;
+}
+
+.col-quantity,
+.col-price {
+  width: 20%;
+}
+
+table th {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+  font-weight: 400;
+}
+
+table th,
+table td {
+  border: 1px solid var(--primary-color-3);
+  padding: 15px 20px;
+  letter-spacing: 1px;
+  background: var(--primary-color-2);
+  vertical-align: top;
+}
+
+table tr :nth-child(2),
+table tr :nth-child(3) {
+  text-align: center;
+}
+
+table tbody tr:nth-child(odd) td {
+  background: var(--primary-color);
+}
+
+table tbody tr:hover td {
+  background: var(--primary-color-1);
+}
